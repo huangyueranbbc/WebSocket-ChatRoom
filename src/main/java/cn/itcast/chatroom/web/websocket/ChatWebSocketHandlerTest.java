@@ -1,6 +1,5 @@
 package cn.itcast.chatroom.web.websocket;
 
-import org.springframework.stereotype.Component;
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.WebSocketHandler;
 import org.springframework.web.socket.WebSocketMessage;
@@ -10,9 +9,8 @@ import org.springframework.web.socket.WebSocketSession;
  * 
  * 说明：WebSocket处理器
  */
-@Component("chatWebSocketHandler")
 public class ChatWebSocketHandlerTest implements WebSocketHandler {
-
+ 
 	@Override
 	public void afterConnectionEstablished(WebSocketSession session) throws Exception {
 		// TODO Auto-generated method stub
